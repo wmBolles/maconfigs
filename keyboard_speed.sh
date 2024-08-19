@@ -6,14 +6,14 @@
 #    By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/19 18:10:45 by wabolles          #+#    #+#              #
-#    Updated: 2024/08/19 18:10:45 by wabolles         ###   ########.fr        #
+#    Updated: 2024/08/19 18:17:28 by wabolles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
-defaults write -g KeyRepeat -int 1
-defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 10
+defaults write -g InitialKeyRepeat -int 100
 killall SystemUIServer
 killall cfprefsd
 dscacheutil -flushcache

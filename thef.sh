@@ -6,7 +6,7 @@
 #    By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/19 16:34:39 by wabolles          #+#    #+#              #
-#    Updated: 2024/08/19 18:16:39 by wabolles         ###   ########.fr        #
+#    Updated: 2024/08/19 18:18:30 by wabolles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 
 bash ~/thef_scripts/dark_mode.sh
 bash ~/thef_scripts/mouse_traking_speed.sh
-bash ~/thef_scripts/keyboard_speed.sh.sh
+bash ~/thef_scripts/keyboard_speed.sh
 
 # Keyboard repeat rate (lower is faster)
 # defaults write -g KeyRepeat -int 1

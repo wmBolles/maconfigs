@@ -6,17 +6,17 @@
 #    By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/19 16:34:30 by wabolles          #+#    #+#              #
-#    Updated: 2024/08/19 17:42:56 by wabolles         ###   ########.fr        #
+#    Updated: 2024/08/19 18:18:53 by wabolles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 MOUSE_SPEED_FILE="$HOME/.mouse_speed"
-INCREMENT=10.5
+INCREMENT=1.5
 
 if [ -f "$MOUSE_SPEED_FILE" ]; then
     CURRENT_SPEED=$(cat "$MOUSE_SPEED_FILE")
 else
-    CURRENT_SPEED=1.0
+    CURRENT_SPEED=10.0
 fi
 
 echo "Current speed: $CURRENT_SPEED"
