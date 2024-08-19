@@ -6,10 +6,9 @@
 #    By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/19 16:34:46 by wabolles          #+#    #+#              #
-#    Updated: 2024/08/19 16:39:30 by wabolles         ###   ########.fr        #
+#    Updated: 2024/08/19 16:41:55 by wabolles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
 
 alias c=clear
 alias m=make
@@ -19,8 +18,8 @@ alias mr="make re"
 alias n=norminette
 alias code='open -a "Visual Studio Code"'
 alias cclean='bash ~/Cleaner_42.sh'
-alias gc="git commit -m "no need to write a commit""
 alias add="git add ."
+alias gc="git commit -m "no_need_to_write_a_commit""
 alias sethaha='
 git config --global user.name "TheF" &&
 git config --global user.email "wassimbolles18@gmail.com" &&
@@ -28,6 +27,10 @@ git config user.name "TheF" &&
 git config user.email "wassimbolles18@gmail.com" &&
 echo "Git global and local user name and email have been set!"
 '
+
+alias s="$sethaha && $add && $gc && $gp"
+
+
 FILE_PATH="/Users/wabolles/thef_scripts/file"
 alias zero='echo "0" > "$FILE_PATH"'
 
