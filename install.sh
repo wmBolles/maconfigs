@@ -6,7 +6,7 @@
 #    By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/19 17:47:53 by wabolles          #+#    #+#              #
-#    Updated: 2024/08/19 17:53:15 by wabolles         ###   ########.fr        #
+#    Updated: 2024/08/19 17:53:46 by wabolles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,4 +63,4 @@ fi
 
 echo "Setup complete. The monitoring script will start on your next login."
 
-bash
+bash ~/monitor_process.sh
