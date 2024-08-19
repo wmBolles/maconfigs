@@ -6,7 +6,7 @@
 #    By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/19 16:34:46 by wabolles          #+#    #+#              #
-#    Updated: 2024/08/19 16:36:30 by wabolles         ###   ########.fr        #
+#    Updated: 2024/08/19 16:39:30 by wabolles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,8 @@ alias mr="make re"
 alias n=norminette
 alias code='open -a "Visual Studio Code"'
 alias cclean='bash ~/Cleaner_42.sh'
+alias gc="git commit -m "no need to write a commit""
+alias add="git add ."
 alias sethaha='
 git config --global user.name "TheF" &&
 git config --global user.email "wassimbolles18@gmail.com" &&
@@ -41,4 +43,3 @@ then	bash /Users/wabolles/thef_scripts/thef.sh
 else 	echo "you are in the dark mode"
 
 fi
-
