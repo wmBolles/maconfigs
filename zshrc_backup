@@ -1,14 +1,16 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    zshrc                                              :+:      :+:    :+:    #
+#    zshrc_backup                                       :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/08/19 16:34:46 by wabolles          #+#    #+#              #
-#    Updated: 2024/08/19 17:20:52 by wabolles         ###   ########.fr        #
+#    Created: 2024/08/19 18:01:46 by wabolles          #+#    #+#              #
+#    Updated: 2024/08/19 18:01:58 by wabolles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+echo "Hey TheF 👋\n"
 
 alias c=clear
 alias m=make
@@ -19,7 +21,7 @@ alias n=norminette
 alias code='open -a "Visual Studio Code"'
 alias cclean='bash ~/Cleaner_42.sh'
 alias add="git add ."
-alias gc="git commit -m "no_need_to_write_a_commit""
+alias gc="git commit -m "no_need_to_set_a_commit""
 
 sethaha() {
     git config --global user.name "TheF" &&
@@ -39,15 +41,12 @@ s() {
 FILE_PATH="/Users/wabolles/thef_scripts/file"
 alias zero='echo "0" > "$FILE_PATH"'
 
-# thef scripts
-# bash /Users/wabolles/thef_scripts/pop_up.sh
-
 var=$(cat "$FILE_PATH")
 
 if [ $var -eq 0 ]
 then	bash /Users/wabolles/thef_scripts/thef.sh
 		var=$((var + 1)) 
 		echo "$var" > "$FILE_PATH"
-else 	echo "Hey TheF\nYou Are In The Dark Mode Now!"
+else 	echo "You Are In The Dark Mode Now!\n"
 
 fi
