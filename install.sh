@@ -6,7 +6,7 @@
 #    By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/19 18:07:10 by wabolles          #+#    #+#              #
-#    Updated: 2024/08/19 18:07:10 by wabolles         ###   ########.fr        #
+#    Updated: 2024/08/19 18:21:31 by wabolles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,13 +41,13 @@ s() {
     git push
 }
 
-FILE_PATH="/Users/wabolles/thef_scripts/file"
+FILE_PATH="~/maconfigs/file"
 alias zero='echo "0" > "$FILE_PATH"'
 
 var=$(cat "$FILE_PATH")
 
 if [ "$var" -eq 0 ]; then
-    bash /Users/wabolles/thef_scripts/thef.sh
+    bash ~/maconfigs/thef.sh
     var=$((var + 1))
     echo "$var" > "$FILE_PATH"
 else
