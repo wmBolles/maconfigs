@@ -6,17 +6,18 @@
 #    By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/19 17:47:53 by wabolles          #+#    #+#              #
-#    Updated: 2024/08/19 17:52:37 by wabolles         ###   ########.fr        #
+#    Updated: 2024/08/19 17:53:15 by wabolles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
 # Define the command you want to run when the process ends
-COMMAND_TO_RUN="$zero"
+cmd=zero
+COMMAND_TO_RUN="$cmd"
 
 # Define the name of the script to be created
-SCRIPT_PATH="./monitor_process.sh"
+SCRIPT_PATH="$HOME/monitor_process.sh"
 
 # Create the monitoring script
 cat << 'EOF' > "$SCRIPT_PATH"
@@ -62,4 +63,4 @@ fi
 
 echo "Setup complete. The monitoring script will start on your next login."
 
-bash ./monitor_process.sh
+bash
