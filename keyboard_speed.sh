@@ -1,15 +1,18 @@
 #!/bin/bash
 
-# Set aggressive values for faster keyboard repeat
-# KeyRepeat:
-# 1 is the fastest, 2 is the default fast, higher numbers are slower
 defaults write -g KeyRepeat -int 1
-
-# InitialKeyRepeat:
-# 10 is the fastest, higher numbers are slower
 defaults write -g InitialKeyRepeat -int 10
-
-# Apply the changes
 killall SystemUIServer
+killall cfprefsd
+dscacheutil -flushcache
 
 echo "Keyboard repeat rate and initial key repeat delay have been set to the fastest settings."
+echo "Current KeyRepeat setting:"
+defaults read -g KeyRepeat
+
+echo "Current InitialKeyRepeat setting:"
+defaults read -g InitialKeyRepeat
+
+ioreg -r -c AppleHIDKeyboardEventDriver | grep -i "KeyRepeat"
+killall cfprefsd
+dscacheutil -flushcache

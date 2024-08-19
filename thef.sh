@@ -6,12 +6,11 @@
 #    By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/19 16:34:39 by wabolles          #+#    #+#              #
-#    Updated: 2024/08/19 16:34:39 by wabolles         ###   ########.fr        #
+#    Updated: 2024/08/19 17:31:55 by wabolles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
-
 
 bash ~/thef_scripts/dark_mode.sh
 bash ~/thef_scripts/mouse_traking_speed.sh
@@ -44,3 +43,8 @@ bash ~/thef_scripts/mouse_traking_speed.sh
 # EOF
 
 # echo "Script completed. Please log out and log back in to apply all changes."
+
+#refresh l9lawi d settings
+
+killall cfprefsd
+dscacheutil -flushcache
