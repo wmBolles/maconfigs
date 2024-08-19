@@ -6,12 +6,12 @@
 #    By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/19 16:34:30 by wabolles          #+#    #+#              #
-#    Updated: 2024/08/19 16:34:31 by wabolles         ###   ########.fr        #
+#    Updated: 2024/08/19 17:42:56 by wabolles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 MOUSE_SPEED_FILE="$HOME/.mouse_speed"
-INCREMENT=1.5
+INCREMENT=10.5
 
 if [ -f "$MOUSE_SPEED_FILE" ]; then
     CURRENT_SPEED=$(cat "$MOUSE_SPEED_FILE")
