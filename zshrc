@@ -6,7 +6,7 @@
 #    By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/19 16:34:46 by wabolles          #+#    #+#              #
-#    Updated: 2024/08/19 16:49:06 by wabolles         ###   ########.fr        #
+#    Updated: 2024/08/19 16:51:33 by wabolles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,6 +49,6 @@ if [ $var -eq 0 ]
 then	bash /Users/wabolles/thef_scripts/thef.sh
 		var=$((var + 1)) 
 		echo "$var" > "$FILE_PATH"
-else 	echo "you are in the dark mode"
+else 	echo "Hey TheF\nYou Are In The Dark Mode Now!"
 
 fi
