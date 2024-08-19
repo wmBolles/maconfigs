@@ -5,16 +5,15 @@
 #                                                     +:+ +:+         +:+      #
 #    By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/08/19 17:47:53 by wabolles          #+#    #+#              #
-#    Updated: 2024/08/19 17:53:46 by wabolles         ###   ########.fr        #
+#    Created: 2024/08/19 17:55:53 by wabolles          #+#    #+#              #
+#    Updated: 2024/08/19 17:55:53 by wabolles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
 # Define the command you want to run when the process ends
-cmd=zero
-COMMAND_TO_RUN="$cmd"
+COMMAND_TO_RUN="/path/to/your/command"
 
 # Define the name of the script to be created
 SCRIPT_PATH="$HOME/monitor_process.sh"
@@ -27,7 +26,7 @@ cat << 'EOF' > "$SCRIPT_PATH"
 COMMAND_TO_RUN="/path/to/your/command"
 
 # Get the name of the most recent process (excluding system processes)
-PROCESS_NAME=$(ps -eo pid,comm --sort=-start_time | awk 'NR==2 {print $2}')
+PROCESS_NAME=$(ps -eo pid,comm -r | awk 'NR==2 {print $2}')
 
 # Check if we successfully got a process name
 if [ -z "$PROCESS_NAME" ]; then
@@ -62,5 +61,3 @@ else
 fi
 
 echo "Setup complete. The monitoring script will start on your next login."
-
-bash ~/monitor_process.sh
