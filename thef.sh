@@ -6,15 +6,15 @@
 #    By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/19 16:34:39 by wabolles          #+#    #+#              #
-#    Updated: 2024/08/19 18:22:08 by wabolles         ###   ########.fr        #
+#    Updated: 2024/08/20 08:06:50 by wabolles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
 bash ~/maconfigs/dark_mode.sh
-bash ~/maconfigs/mouse_traking_speed.sh
-bash ~/maconfigs/keyboard_speed.sh
+# bash ~/maconfigs/mouse_traking_speed.sh
+# bash ~/maconfigs/keyboard_speed.sh
 
 # Keyboard repeat rate (lower is faster)
 # defaults write -g KeyRepeat -int 1
