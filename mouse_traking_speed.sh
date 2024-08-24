@@ -6,7 +6,7 @@
 #    By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/19 16:34:30 by wabolles          #+#    #+#              #
-#    Updated: 2024/08/19 18:18:53 by wabolles         ###   ########.fr        #
+#    Updated: 2024/08/24 17:00:31 by wabolles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,5 +27,5 @@ defaults write -g com.apple.mouse.scaling -float "$NEW_SPEED"
 echo "Mouse speed set to $NEW_SPEED"
 echo "$NEW_SPEED" > "$MOUSE_SPEED_FILE"
 
-killall SystemUIServer
-killall Dock
+# killall SystemUIServer
+# killall Dock
