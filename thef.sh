@@ -13,8 +13,8 @@
 #!/bin/bash
 
 bash ~/maconfigs/dark_mode.sh
-bash ~/maconfigs/mouse_traking_speed.sh
-bash ~/maconfigs/keyboard_speed.sh
+#bash ~/maconfigs/mouse_traking_speed.sh
+#bash ~/maconfigs/keyboard_speed.sh
 
 # Keyboard repeat rate (lower is faster)
 # defaults write -g KeyRepeat -int 1
